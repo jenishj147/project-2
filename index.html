@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halluci - Premium Cloths & Rare Thrifted Items</title>
+    <link rel="icon" href="halluci img.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(255,0,0,0.3);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff0000;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff0000;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('halluci img.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #ff0000;
+        }
+        .hero h5 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .video-container {
+            margin: 2rem 0;
+        }
+        .video-container iframe {
+            max-width: 100%;
+            height: 315px;
+        }
+        .brands {
+            padding: 4rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .brands h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #ff0000;
+        }
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .brand-item {
+            background-color: #111;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .brand-item:hover {
+            transform: translateY(-5px);
+            background-color: #222;
+        }
+        .cta {
+            text-align: center;
+            padding: 4rem 20px;
+        }
+        .cta a {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta a:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 2rem 20px;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            nav ul {
+                display: none;
+            }
+            .brands-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HALLUCI</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="buy.html">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>HALLUCI</h1>
+            <h5>Premium Cloths | Rare Thrifted Cloths</h5>
+            <p>Introducing Rare Branded Items To Elevate Your Fashion</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HKjcfeBue2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <section class="brands">
+        <h2>BRANDS AVAILABLE</h2>
+        <div class="brands-grid">
+            <div class="brand-item">Carcarot</div>
+            <div class="brand-item">Nike</div>
+            <div class="brand-item">Adidas</div>
+            <div class="brand-item">Puma</div>
+            <div class="brand-item">Reebok</div>
+            <div class="brand-item">Levis</div>
+            <div class="brand-item">Wrangler</div>
+            <div class="brand-item">Woodland</div>
+            <div class="brand-item">Dickies</div>
+            <div class="brand-item">Rare Rabbit</div>
+            <div class="brand-item">Sould Store</div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <a href="products.html">View Halluci Products</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Halluci. All rights reserved.</p>
+    </footer>
+</body>
+</html>

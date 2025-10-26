@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Rabbit Sweat Shirt - Halluci Products</title>
+    <link rel="icon" href="halluci img.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+        header {
+            background-color: #000;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(255,0,0,0.3);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff0000;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff0000;
+        }
+        .product-section {
+            padding: 4rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+        .slide {
+            display: none;
+            animation: fade 1s ease;
+        }
+        @keyframes fade {
+            from {opacity: 0.4;}
+            to {opacity: 1;}
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        .slide img:hover {
+            transform: scale(1.05);
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(255,0,0,0.8);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: #ff0000;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 2rem 20px;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .slideshow-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HALLUCI</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="buy.html">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <h1>Rare Rabbit Sweat Shirt</h1>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="rare rabbit sweat shirt/blue.jpg" alt="Blue Rare Rabbit Sweat Shirt">
+            </div>
+            <div class="slide">
+                <img src="rare rabbit sweat shirt/green.jpg" alt="Green Rare Rabbit Sweat Shirt">
+            </div>
+            <div class="slide">
+                <img src="rare rabbit sweat shirt/grey.jpg" alt="Grey Rare Rabbit Sweat Shirt">
+            </div>
+            <div class="slide">
+                <img src="rare rabbit sweat shirt/black.jpg" alt="Black Rare Rabbit Sweat Shirt">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <a href="buy.html" class="buy-button">Buy Now</a>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Halluci. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var modalImg = document.getElementById("img01");
+
+        // Get all images in the slideshow
+        var images = document.querySelectorAll('.slide img');
+
+        // Add click event to each image
+        images.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
